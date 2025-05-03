@@ -1,5 +1,6 @@
 plugins {
     `java-gradle-plugin`
+    `maven-publish`
 }
 
 repositories {
@@ -23,5 +24,17 @@ gradlePlugin {
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(22)
+    }
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("jitpack") {
+            groupId = "com.github.UsUsStudios"
+            artifactId = "Torgrays-Datagen"
+            version = "v0.1" // Update with your version tag
+
+            from(components["java"])
+        }
     }
 }
