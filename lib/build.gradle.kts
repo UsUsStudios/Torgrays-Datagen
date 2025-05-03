@@ -1,5 +1,5 @@
 plugins {
-    `java-gradle-plugin`
+    `java-library`
     `maven-publish`
 }
 
@@ -10,15 +10,6 @@ repositories {
 dependencies {
     testImplementation(libs.junit.jupiter)
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
-}
-
-gradlePlugin {
-    plugins {
-        create("torgraysDatagen") {
-            id = "com.ususstudios.torgrays_datagen"
-            implementationClass = "com.ususstudios.torgrays_datagen.TorgraysDatagenPlugin"
-        }
-    }
 }
 
 java {
@@ -32,7 +23,7 @@ publishing {
         create<MavenPublication>("jitpack") {
             groupId = "com.github.UsUsStudios"
             artifactId = "Torgrays-Datagen"
-            version = "v0.1" // Update with your version tag
+            version = "v0.2" // Update with your version tag
 
             from(components["java"])
         }
