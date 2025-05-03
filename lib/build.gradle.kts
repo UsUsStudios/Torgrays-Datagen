@@ -23,9 +23,21 @@ publishing {
         create<MavenPublication>("jitpack") {
             groupId = "com.github.UsUsStudios"
             artifactId = "Torgrays-Datagen"
-            version = "v0.3" // Update with your version tag
+            version = "v0.4" // Update with your version tag
 
             from(components["java"])
         }
     }
+}
+
+sourceSets {
+    main {
+        java {
+            setSrcDirs(listOf("src/main/java"))
+        }
+    }
+}
+
+tasks.jar {
+    from(sourceSets.main.get().output) // Ensures compiled classes are included
 }
