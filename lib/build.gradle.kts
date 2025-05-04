@@ -8,8 +8,7 @@ repositories {
 }
 
 dependencies {
-    testImplementation(libs.junit.jupiter)
-    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+    implementation("org.json:json:20250107")
 }
 
 java {
@@ -23,7 +22,7 @@ publishing {
         create<MavenPublication>("jitpack") {
             groupId = "com.github.UsUsStudios"
             artifactId = "Torgrays-Datagen"
-            version = "v0.4" // Update with your version tag
+            version = "Alpha-2.3" // Update with your version tag
 
             from(components["java"])
         }
