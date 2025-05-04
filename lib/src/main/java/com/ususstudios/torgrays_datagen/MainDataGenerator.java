@@ -14,7 +14,8 @@ public abstract class MainDataGenerator {
 		for (Generator generator : generators) {
 			switch (generator.name) {
 				case "maps", "events", "loot tables":
-					for (Map.Entry<String, JSONObject> object : generator.objects.entrySet()) {
+					generator.registerAll();
+					for (Map.Entry<String, JSONObject> object : generator.generatedJson.entrySet()) {
 						if (!generator.verify(object.getValue()))
 							throw new DataGenerationException(
 								"Invalid data for generator1 of type '" + generator.name + "': " +
