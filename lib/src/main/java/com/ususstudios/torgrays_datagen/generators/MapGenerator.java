@@ -38,7 +38,7 @@ public abstract class MapGenerator extends Generator {
 					put("path", entity.path());
 					put("col", entity.col());
 					put("row", entity.row());
-					if (entity.lootTable() != null) put("loot table", entity.path());
+					if (entity.lootTable() != null) put("loot table", entity.lootTable());
 				}});
 			}
 			put("objects", objectsList);
@@ -49,7 +49,7 @@ public abstract class MapGenerator extends Generator {
 					put("path", entity.path());
 					put("col", entity.col());
 					put("row", entity.row());
-					if (entity.lootTable() != null) put("loot table", entity.path());
+					if (entity.lootTable() != null) put("loot table", entity.lootTable());
 				}});
 			}
 			put("npcs", npcsList);
@@ -60,7 +60,7 @@ public abstract class MapGenerator extends Generator {
 					put("path", entity.path());
 					put("col", entity.col());
 					put("row", entity.row());
-					if (entity.lootTable() != null) put("loot table", entity.path());
+					if (entity.lootTable() != null) put("loot table", entity.lootTable());
 				}});
 			}
 			put("monsters", monstersList);
