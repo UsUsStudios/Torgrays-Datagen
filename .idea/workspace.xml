@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37309630-bc66-46e4-a064-ee324446c4d7" name="Changes" comment="Created abstract classes MainDataGenerator and Generator (incomplete)">
-      <change beforePath="$PROJECT_DIR$/lib/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build.gradle.kts" afterDir="false" />
+    <list default="true" id="37309630-bc66-46e4-a064-ee324446c4d7" name="Changes" comment="Fixed bug with loot tables">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/com/ususstudios/torgrays_datagen/generators/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/com/ususstudios/torgrays_datagen/generators/Entity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -332,7 +333,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746322706967</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Fixed bug with loot tables">
+      <option name="closed" value="true" />
+      <created>1746483067228</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1746483067228</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -369,6 +378,7 @@
     <MESSAGE value="Fully changed to a library" />
     <MESSAGE value="FULLY fully changed to a library" />
     <MESSAGE value="Created abstract classes MainDataGenerator and Generator (incomplete)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created abstract classes MainDataGenerator and Generator (incomplete)" />
+    <MESSAGE value="Fixed bug with loot tables" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug with loot tables" />
   </component>
 </project>
