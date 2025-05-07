@@ -5,9 +5,29 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+/**
+ * A class you can extend to register maps to generate.
+ */
 public abstract class MapGenerator extends Generator {
 	public MapGenerator() {super("maps");}
 	
+	/**
+	 * Registers a new map to be generated.
+	 * @param jsonName The filename of the created JSON file.
+	 * @param map An array of rows for the map. Each row is a series of numbers that correspond to tile IDs, split by
+	 *              spaces.
+	 * @param name The registered name of the map.
+	 * @param numberKey The number key that is used to identify the map in the code.
+	 * @param music The name of the music that is to be played in this map. Set to {@code Default} to have the
+	 *                 regular gloom cycle music.
+	 * @param spawnX The column where the player should spawn when entering the map.
+	 * @param spawnY The row where the player should spawn when entering the map.
+	 * @param lightRadius The radius of vision of the player in this map.
+	 * @param blueEffect Whether the map should display a blue effect.
+	 * @param objects A list of Entities that will be the objects in this map.
+	 * @param npcs A list of Entities that will be the NPCs in this map.
+	 * @param monsters A list of Entities that will be the monsters in this map.
+	 */
 	public void register(
 			String jsonName,
 			String[] map,
@@ -68,8 +88,6 @@ public abstract class MapGenerator extends Generator {
 		
 		generatedJson.put(jsonName, object);
 	}
-	
-	public abstract void registerAll();
 	
 	@Override
 	public boolean verify(JSONObject object) {
