@@ -1,4 +1,4 @@
-package com.ususstudios.torgrays_datagen.generators;
+package com.ususstudios.torgrays_datagen.dataclasses;
 
 /**
  * A record for entities, used in the map generator.

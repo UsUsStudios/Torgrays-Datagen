@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37309630-bc66-46e4-a064-ee324446c4d7" name="Changes" comment="Fixed bug with loot tables">
+    <list default="true" id="37309630-bc66-46e4-a064-ee324446c4d7" name="Changes" comment="Added a single select register method for LootTableGenerator">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/ususstudios/torgrays_datagen/dataclasses/LootTableItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/ususstudios/torgrays_datagen/generators/LootTableGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/ususstudios/torgrays_datagen/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/resources/loot_table.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/com/ususstudios/torgrays_datagen/generators/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/com/ususstudios/torgrays_datagen/generators/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/com/ususstudios/torgrays_datagen/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/com/ususstudios/torgrays_datagen/Generator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/com/ususstudios/torgrays_datagen/MainDataGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/com/ususstudios/torgrays_datagen/MainDataGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/com/ususstudios/torgrays_datagen/generators/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/com/ususstudios/torgrays_datagen/dataclasses/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/com/ususstudios/torgrays_datagen/generators/MapGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/com/ususstudios/torgrays_datagen/generators/MapGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,8 +75,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
-        <option value="Class" />
         <option value="Exception" />
+        <option value="Class" />
+        <option value="Record" />
       </list>
     </option>
   </component>
@@ -132,6 +141,9 @@
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="com.ususstudios.torgrays_datagen" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ususstudios.torgrays_datagen.generators" />
     </key>
   </component>
   <component name="RunManager" selected="Gradle.Torgrays-Datagen [jar]">
@@ -341,7 +353,47 @@
       <option name="project" value="LOCAL" />
       <updated>1746483067228</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added the ability to pass the class into the Entity constructor">
+      <option name="closed" value="true" />
+      <created>1746485074135</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1746485074135</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added the ability to pass the class into the Entity constructor">
+      <option name="closed" value="true" />
+      <created>1746485101661</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1746485101661</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Javadoc for MainDataGenerator">
+      <option name="closed" value="true" />
+      <created>1746659838483</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1746659838483</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Javadoc for MapGenerator">
+      <option name="closed" value="true" />
+      <created>1746660792569</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1746660792569</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Javadoc for Entity">
+      <option name="closed" value="true" />
+      <created>1746661190353</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1746661190353</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -379,6 +431,11 @@
     <MESSAGE value="FULLY fully changed to a library" />
     <MESSAGE value="Created abstract classes MainDataGenerator and Generator (incomplete)" />
     <MESSAGE value="Fixed bug with loot tables" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug with loot tables" />
+    <MESSAGE value="Added the ability to pass the class into the Entity constructor" />
+    <MESSAGE value="Javadoc for MainDataGenerator" />
+    <MESSAGE value="Javadoc for MapGenerator" />
+    <MESSAGE value="Javadoc for Entity" />
+    <MESSAGE value="Added a single select register method for LootTableGenerator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a single select register method for LootTableGenerator" />
   </component>
 </project>

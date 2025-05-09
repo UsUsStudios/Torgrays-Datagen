@@ -1,0 +1,21 @@
+{
+  "name": "Hewwow",
+  "loot": [
+    {
+      "chance": 1,
+      "loot": [
+        {"object": "net.dinglezz.yayyyy", "chance": 0.50, "amount": 1},
+        {"object": "net.dinglezz.yayyyy", "chance": 0.25, "amount": 1},
+        {"object": "net.dinglezz.yayyyy", "chance": 0.25, "amount": 1}
+      ]
+    },
+    {
+      "chance": 0.5,
+      "loot": [
+        {"object": "net.dinglezz.yayyyy", "chance": 0.50, "amount": 1},
+        {"object": "net.dinglezz.yayyyy", "chance": 0.25, "amount": 1},
+        {"object": "net.dinglezz.yayyyy", "chance": 0.25, "amount": 1}
+      ]
+    }
+  ]
+}

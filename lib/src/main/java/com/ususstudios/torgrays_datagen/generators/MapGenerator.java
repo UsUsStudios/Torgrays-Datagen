@@ -1,6 +1,7 @@
 package com.ususstudios.torgrays_datagen.generators;
 
 import com.ususstudios.torgrays_datagen.Generator;
+import com.ususstudios.torgrays_datagen.dataclasses.Entity;
 import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.HashMap;

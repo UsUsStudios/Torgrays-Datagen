@@ -12,5 +12,5 @@ public abstract class Generator {
 	
 	public abstract boolean verify(JSONObject object);
 	
-	public abstract void registerAll();
+	public abstract void registerAll() throws DataGenerationException;
 }

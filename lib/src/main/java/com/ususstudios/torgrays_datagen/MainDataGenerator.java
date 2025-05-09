@@ -31,7 +31,7 @@ public abstract class MainDataGenerator {
 					for (Map.Entry<String, JSONObject> object : generator.generatedJson.entrySet()) {
 						if (!generator.verify(object.getValue()))
 							throw new DataGenerationException(
-								"Invalid data for generator1 of type '" + generator.name + "': " +
+								"Invalid data for generator of type '" + generator.name + "': " +
 								object.getValue().toString(2) + " This is likely not your fault, " +
 								"please make an issue about this on GitHub.");
 						createFile(generator, object);
