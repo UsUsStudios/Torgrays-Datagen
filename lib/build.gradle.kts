@@ -22,7 +22,7 @@ publishing {
         create<MavenPublication>("jitpack") {
             groupId = "com.github.UsUsStudios"
             artifactId = "Torgrays-Datagen"
-            version = "v0.8" // Update with your version tag
+            version = "v0.10" // Update with your version tag
 
             from(components["java"])
         }

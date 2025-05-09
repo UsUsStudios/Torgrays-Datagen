@@ -9,7 +9,7 @@ import org.json.JSONObject;
  * A class you can extend to register loot tables to generate.
  */
 public abstract class LootTableGenerator extends Generator {
-	public LootTableGenerator() {super("loot tables");}
+	public LootTableGenerator() {super("loot_tables");}
 	
 	/**
 	 * Registers a single-select loot table to be generated.

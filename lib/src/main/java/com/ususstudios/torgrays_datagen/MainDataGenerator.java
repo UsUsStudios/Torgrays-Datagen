@@ -26,7 +26,7 @@ public abstract class MainDataGenerator {
 	private void generate() throws DataGenerationException {
 		for (Generator generator : generators) {
 			switch (generator.name) {
-				case "maps", "events", "loot tables":
+				case "maps", "events", "loot_tables":
 					generator.registerAll();
 					for (Map.Entry<String, JSONObject> object : generator.generatedJson.entrySet()) {
 						if (!generator.verify(object.getValue()))
