@@ -47,6 +47,36 @@ public abstract class LootTableGenerator extends Generator {
 		generatedJson.put(jsonName, object);
 	}
 	
+	/**
+	 * Registers a multi-select loot table to be generated.
+	 * A multi-select loot table is one that has a percent chance of picking each option out of a list of options (with
+	 * specified chances) and can pick as many as necessary.
+	 * @param jsonName The filename of the created JSON file.
+	 * @param name The registered name of the loot table.
+	 * @param lootTable A list of all the loot table items that can be picked.
+	 */
+	public void registerMultiSelect(
+			String jsonName,
+			String name,
+			LootTableItem[] lootTable) {
+		JSONObject object = new JSONObject();
+		object.put("name", name);
+		
+		for (LootTableItem item : lootTable) {
+			JSONObject parentObject = new JSONObject();
+			parentObject.put("chance", 1);
+			
+			JSONObject itemObject = new JSONObject();
+			itemObject.put("object", item.object);
+			itemObject.put("chance", item.chance);
+			itemObject.put("amount", item.amount);
+			parentObject.append("loot", itemObject);
+			object.append("loot", parentObject);
+		}
+		
+		generatedJson.put(jsonName, object);
+	}
+	
 	public abstract void registerAll() throws DataGenerationException;
 	
 	@Override
