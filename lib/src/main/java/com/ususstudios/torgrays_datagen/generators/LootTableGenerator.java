@@ -84,8 +84,8 @@ public abstract class LootTableGenerator extends Generator {
 	 * @param jsonName The filename of the created JSON file.
 	 * @param name The registered name of the loot table.
 	 * @param lootTable A list of all the loot table items that can be picked.
-	 * @param min The maximum amount of items that can be selected.
-	 * @param max The minimum amount of items that can be selected.
+	 * @param min The minimum amount of items that can be selected. Set as -1 if there is no minimum.
+	 * @param max The maximum amount of items that can be selected. Set as -1 if there is no maximum.
 	 */
 	public void registerMultiSelect(
 			String jsonName,
