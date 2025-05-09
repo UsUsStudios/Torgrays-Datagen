@@ -24,7 +24,7 @@ public class LootTableItem {
 			int amount
 	) throws DataGenerationException {
 		this.object = object;
-		if (chance < 1 && 0 <= chance) this.chance = chance;
+		if (chance <= 1 && 0 < chance) this.chance = chance;
 		else throw new DataGenerationException("Invalid value for argument 'chance': value must be a positive float " +
 				"that is less than or equal to 1.");
 		
