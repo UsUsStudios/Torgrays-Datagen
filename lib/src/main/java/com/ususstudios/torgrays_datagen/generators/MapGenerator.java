@@ -18,7 +18,6 @@ public abstract class MapGenerator extends Generator {
 	 * @param map An array of rows for the map. Each row is a series of numbers that correspond to tile IDs, split by
 	 *              spaces.
 	 * @param name The registered name of the map.
-	 * @param numberKey The number key that is used to identify the map in the code.
 	 * @param music The name of the music that is to be played in this map. Set to {@code Default} to have the
 	 *                 regular gloom cycle music.
 	 * @param spawnX The column where the player should spawn when entering the map.
@@ -33,7 +32,6 @@ public abstract class MapGenerator extends Generator {
 			String jsonName,
 			String[] map,
 	        String name,
-	        int numberKey,
 	        String music,
 	        int spawnX, int spawnY,
 	        int lightRadius,
@@ -44,7 +42,6 @@ public abstract class MapGenerator extends Generator {
 		JSONObject object = new JSONObject();
 		object.put("map", map);
 		object.put("name", name);
-		object.put("numberKey", numberKey);
 		object.put("music", music);
 		object.put("spawn point", new HashMap<>(){{
 			put("col", spawnX);
