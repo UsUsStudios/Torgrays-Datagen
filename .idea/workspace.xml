@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37309630-bc66-46e4-a064-ee324446c4d7" name="Changes" comment="Added a multi-select register method for LootTableGenerator">
+    <list default="true" id="37309630-bc66-46e4-a064-ee324446c4d7" name="Changes" comment="Sigh fixed another bug">
       <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/ususstudios/torgrays_datagen/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +137,7 @@
       <recent name="com.ususstudios.torgrays_datagen.generators" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Torgrays-Datagen [jar]">
+  <component name="RunManager" selected="Gradle.Torgrays-Datagen [publish]">
     <configuration name="Torgrays-Datagen [jar]" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -401,7 +400,39 @@
       <option name="project" value="LOCAL" />
       <updated>1746751652692</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Added min and max">
+      <option name="closed" value="true" />
+      <created>1746754169246</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1746754169246</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Slightly updated Javadoc in LootTableGenerator">
+      <option name="closed" value="true" />
+      <created>1746754520046</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1746754520046</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Fixed bug in LootTableItem">
+      <option name="closed" value="true" />
+      <created>1746754867518</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1746754867518</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Sigh fixed another bug">
+      <option name="closed" value="true" />
+      <created>1746755235382</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1746755235382</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -445,6 +476,10 @@
     <MESSAGE value="Javadoc for Entity" />
     <MESSAGE value="Added a single select register method for LootTableGenerator" />
     <MESSAGE value="Added a multi-select register method for LootTableGenerator" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a multi-select register method for LootTableGenerator" />
+    <MESSAGE value="Added min and max" />
+    <MESSAGE value="Slightly updated Javadoc in LootTableGenerator" />
+    <MESSAGE value="Fixed bug in LootTableItem" />
+    <MESSAGE value="Sigh fixed another bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sigh fixed another bug" />
   </component>
 </project>

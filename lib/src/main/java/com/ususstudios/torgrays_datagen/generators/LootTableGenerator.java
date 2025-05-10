@@ -3,6 +3,7 @@ package com.ususstudios.torgrays_datagen.generators;
 import com.ususstudios.torgrays_datagen.DataGenerationException;
 import com.ususstudios.torgrays_datagen.Generator;
 import com.ususstudios.torgrays_datagen.dataclasses.LootTableItem;
+import com.ususstudios.torgrays_datagen.dataclasses.SpecialLootTableItem;
 import org.json.JSONObject;
 
 /**
@@ -107,6 +108,78 @@ public abstract class LootTableGenerator extends Generator {
 			itemObject.put("chance", item.chance);
 			itemObject.put("amount", item.amount);
 			parentObject.append("loot", itemObject);
+			object.append("loot", parentObject);
+		}
+		
+		generatedJson.put(jsonName, object);
+	}
+	
+	/**
+	 * Registers a special-select loot table to be generated.
+	 * A special-select loot table is one that has a multi-select list of single-select loot tables.
+	 * @param jsonName The filename of the created JSON file.
+	 * @param name The registered name of the loot table.
+	 * @param lootTableItems A list of all the multi-select loot tables that can be picked.
+	 */
+	public void registerSpecialSelect(
+			String jsonName,
+			String name,
+			SpecialLootTableItem[] lootTableItems
+	) {
+		JSONObject object = new JSONObject();
+		object.put("name", name);
+		
+		for (SpecialLootTableItem specialLootTableItem : lootTableItems) {
+			JSONObject parentObject = new JSONObject();
+			parentObject.put("chance", specialLootTableItem.chance);
+			
+			for (LootTableItem item : specialLootTableItem.lootTable) {
+				JSONObject itemObject = new JSONObject();
+				itemObject.put("object", item.object);
+				itemObject.put("chance", item.chance);
+				itemObject.put("amount", item.amount);
+				parentObject.append("loot", itemObject);
+			}
+			
+			object.append("loot", parentObject);
+		}
+		
+		generatedJson.put(jsonName, object);
+	}
+	
+	/**
+	 * Registers a special-select loot table to be generated.
+	 * A special-select loot table is one that has a multi-select list of single-select loot tables.
+	 * @param jsonName The filename of the created JSON file.
+	 * @param name The registered name of the loot table.
+	 * @param min The minimum amount of loot tables that can be selected. Set as -1 if there is no minimum.
+	 * @param max The maximum amount of loot tables that can be selected. Set as -1 if there is no maximum.
+	 * @param lootTableItems A list of all the multi-select loot tables that can be picked.
+	 */
+	public void registerSpecialSelect(
+			String jsonName,
+			String name,
+			SpecialLootTableItem[] lootTableItems,
+			int min,
+			int max
+	) {
+		JSONObject object = new JSONObject();
+		object.put("name", name);
+		if (min != -1) object.put("min", min);
+		if (max != -1) object.put("max", max);
+		
+		for (SpecialLootTableItem specialLootTableItem : lootTableItems) {
+			JSONObject parentObject = new JSONObject();
+			parentObject.put("chance", specialLootTableItem.chance);
+			
+			for (LootTableItem item : specialLootTableItem.lootTable) {
+				JSONObject itemObject = new JSONObject();
+				itemObject.put("object", item.object);
+				itemObject.put("chance", item.chance);
+				itemObject.put("amount", item.amount);
+				parentObject.append("loot", itemObject);
+			}
+			
 			object.append("loot", parentObject);
 		}
 		
