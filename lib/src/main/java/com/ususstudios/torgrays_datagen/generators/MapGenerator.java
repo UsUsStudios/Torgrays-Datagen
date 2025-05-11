@@ -15,8 +15,10 @@ public abstract class MapGenerator extends Generator {
 	/**
 	 * Registers a new map to be generated.
 	 * @param jsonName The filename of the created JSON file.
-	 * @param map An array of rows for the map. Each row is a series of numbers that correspond to tile IDs, split by
-	 *              spaces.
+	 * @param ground An array of rows for the ground of the map. Each row is a series of numbers that correspond to
+	 *                  tile IDs, split by spaces.
+	 * @param foreground An array of rows for the foreground of the map. Each row is a series of numbers that correspond
+	 *                     to tile IDs, split by spaces.
 	 * @param name The registered name of the map.
 	 * @param music The name of the music that is to be played in this map. Set to {@code Default} to have the
 	 *                 regular gloom cycle music.
@@ -30,7 +32,8 @@ public abstract class MapGenerator extends Generator {
 	 */
 	public void register(
 			String jsonName,
-			String[] map,
+			String[] ground,
+			String[] foreground,
 	        String name,
 	        String music,
 	        int spawnX, int spawnY,
@@ -40,7 +43,10 @@ public abstract class MapGenerator extends Generator {
 			Entity[] npcs,
 			Entity[] monsters) {
 		JSONObject object = new JSONObject();
-		object.put("map", map);
+		object.put("map", new HashMap<>(){{
+			put("ground", ground);
+			put("foreground", foreground);
+		}});
 		object.put("name", name);
 		object.put("music", music);
 		object.put("spawn point", new HashMap<>(){{
