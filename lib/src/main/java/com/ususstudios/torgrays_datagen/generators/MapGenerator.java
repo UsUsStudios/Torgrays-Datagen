@@ -2,6 +2,7 @@ package com.ususstudios.torgrays_datagen.generators;
 
 import com.ususstudios.torgrays_datagen.Generator;
 import com.ususstudios.torgrays_datagen.dataclasses.Entity;
+import com.ususstudios.torgrays_datagen.dataclasses.Event;
 import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -41,7 +42,8 @@ public abstract class MapGenerator extends Generator {
 	        boolean blueEffect,
 			Entity[] objects,
 			Entity[] npcs,
-			Entity[] monsters) {
+			Entity[] monsters,
+			Event[] events) {
 		JSONObject object = new JSONObject();
 		object.put("map", new HashMap<>(){{
 			put("ground", ground);
@@ -89,6 +91,19 @@ public abstract class MapGenerator extends Generator {
 			}
 			put("monsters", monstersList);
 		}});
+		
+		ArrayList<HashMap<String, Object>> eventsList = new ArrayList<>();
+		for (Event event : events) {
+			eventsList.add(new HashMap<>(){{
+				put("path", event.path());
+				put("col", String.valueOf(event.col()));
+				put("row", String.valueOf(event.row()));
+				if (event.parameters() != null) {
+					put("parameters", event.parameters());
+				}
+			}});
+		}
+		object.put("events", eventsList);
 		
 		generatedJson.put(jsonName, object);
 	}
