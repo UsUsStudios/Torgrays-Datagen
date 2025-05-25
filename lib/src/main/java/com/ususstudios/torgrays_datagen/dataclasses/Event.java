@@ -9,7 +9,7 @@ import java.util.HashMap;
  * @param row The row of the event.
  * @param parameters The parameters of the event.
  */
-public record Event(String path, int col, int row, HashMap<String, String> parameters) {
+public record Event(String path, int col, int row, HashMap<String, Object> parameters) {
 	/**
 	 * A record for events, used in the map generator.
 	 * @param eventClass The event class.
@@ -17,7 +17,7 @@ public record Event(String path, int col, int row, HashMap<String, String> param
 	 * @param row The row of the event.
 	 * @param parameters The parameters of the event.
 	 */
-	public Event(Class<?> eventClass, int col, int row, HashMap<String, String> parameters) {
+	public Event(Class<?> eventClass, int col, int row, HashMap<String, Object> parameters) {
 		this(eventClass.getName(), col, row, parameters);
 	}
 	
