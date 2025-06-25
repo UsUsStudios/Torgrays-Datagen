@@ -43,6 +43,7 @@ public abstract class MapGenerator extends Generator {
 			Entity[] objects,
 			Entity[] npcs,
 			Entity[] monsters,
+			Entity[] items,
 			Event[] events) {
 		JSONObject object = new JSONObject();
 		object.put("map", new HashMap<>(){{
@@ -90,14 +91,25 @@ public abstract class MapGenerator extends Generator {
 				}});
 			}
 			put("monsters", monstersList);
+			
+			ArrayList<HashMap<String, Object>> itemsList = new ArrayList<>();
+			for (Entity entity : items) {
+				itemsList.add(new HashMap<>(){{
+					put("path", entity.path());
+					put("col", entity.col());
+					put("row", entity.row());
+					if (entity.lootTable() != null) put("loot table", entity.lootTable());
+				}});
+			}
+			put("items", itemsList);
 		}});
 		
 		ArrayList<HashMap<String, Object>> eventsList = new ArrayList<>();
 		for (Event event : events) {
 			eventsList.add(new HashMap<>(){{
 				put("path", event.path());
-				put("col", String.valueOf(event.col()));
-				put("row", String.valueOf(event.row()));
+				put("col", event.col());
+				put("row", event.row());
 				if (event.parameters() != null) {
 					put("parameters", event.parameters());
 				}
