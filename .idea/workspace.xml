@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37309630-bc66-46e4-a064-ee324446c4d7" name="Changes" comment="Fixed a small oopsy">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/com/ususstudios/torgrays_datagen/generators/MapGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/com/ususstudios/torgrays_datagen/generators/MapGenerator.java" afterDir="false" />
-    </list>
+    <list default="true" id="37309630-bc66-46e4-a064-ee324446c4d7" name="Changes" comment="v1.0" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -442,7 +439,23 @@
       <option name="project" value="LOCAL" />
       <updated>1748209453050</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="items">
+      <option name="closed" value="true" />
+      <created>1750889741511</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1750889741511</updated>
+    </task>
+    <task id="LOCAL-00026" summary="v1.0">
+      <option name="closed" value="true" />
+      <created>1750889817124</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1750889817124</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -495,6 +508,8 @@
     <MESSAGE value="Added ground vs foreground" />
     <MESSAGE value="Events yay" />
     <MESSAGE value="Fixed a small oopsy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed a small oopsy" />
+    <MESSAGE value="items" />
+    <MESSAGE value="v1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.0" />
   </component>
 </project>

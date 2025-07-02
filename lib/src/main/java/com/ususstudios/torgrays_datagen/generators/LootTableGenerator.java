@@ -34,7 +34,7 @@ public abstract class LootTableGenerator extends Generator {
 		for (LootTableItem item : lootTable) {
 			chanceSum += item.chance;
 			JSONObject itemObject = new JSONObject();
-			itemObject.put("object", item.object);
+			itemObject.put("item", item.object);
 			itemObject.put("chance", item.chance);
 			itemObject.put("amount", item.amount);
 			parentObject.append("loot", itemObject);
