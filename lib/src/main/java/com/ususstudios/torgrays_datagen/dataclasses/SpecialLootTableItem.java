@@ -24,7 +24,8 @@ public class SpecialLootTableItem {
 			chanceSum += lootTableItem.chance;
 		}
 		
-		if (chanceSum != 1) throw new DataGenerationException("The sum of all chances in this special loot table " +
+		if (Math.round(chanceSum * 1000) / 1000 != 1)
+			throw new DataGenerationException("The sum of all chances in this special loot table " +
 				"must be 1, this sum is " + chanceSum + ".");
 	}
 }

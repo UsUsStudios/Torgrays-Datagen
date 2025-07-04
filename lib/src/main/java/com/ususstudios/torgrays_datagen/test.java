@@ -1,10 +1,12 @@
 package com.ususstudios.torgrays_datagen;
 
-import com.ususstudios.torgrays_datagen.generators.MapGenerator;
-
-public class test extends MapGenerator {
-	@Override
-	public void registerAll() {
-	
+public class test {
+	public static void main(String[] args) {
+		System.out.println(0.36f +
+		0.30f +
+		0.16f +
+		0.10f +
+		0.04f +
+		0.04f);
 	}
 }
