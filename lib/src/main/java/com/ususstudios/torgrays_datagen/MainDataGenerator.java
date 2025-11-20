@@ -55,7 +55,7 @@ public abstract class MainDataGenerator {
 						"File made unsuccessfully: " + file.getAbsolutePath() + " (directory " + parentDir.getPath() +
 								" unsuccessfully created.");
 			}
-			var _ = file.createNewFile();
+			file.createNewFile();
 			FileWriter writer = new FileWriter(file);
 			writer.write(object.getValue().toString(2));
 			writer.close();
