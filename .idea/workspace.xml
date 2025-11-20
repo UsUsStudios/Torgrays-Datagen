@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37309630-bc66-46e4-a064-ee324446c4d7" name="Changes" comment="object -&gt; item">
+    <list default="true" id="37309630-bc66-46e4-a064-ee324446c4d7" name="Changes" comment="fixed an issue">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -115,6 +115,7 @@
     &quot;Gradle.Torgrays-Datagen [login].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Torgrays-Datagen [publishPlugins].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Torgrays-Datagen [publish].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Torgrays-Datagen:lib [:lib:com.ususstudios.torgrays_datagen.test.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Torgrays-Datagen:lib [login].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Torgrays-Datagen:lib [publishPlugins].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Torgrays-Datagen:lib [publish].executor&quot;: &quot;Run&quot;,
@@ -122,7 +123,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/HP/Documents/Daniel's Stuff/Programming/Java The Hut/Torgray's Trials/Torgrays-Datagen&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/HP/Documents/Daniels Stuff/Programming/Java The Hut/Torgray's Trials/Torgrays-Datagen&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15625&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -140,20 +141,7 @@
       <recent name="com.ususstudios.torgrays_datagen.generators" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.test">
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ususstudios.torgrays_datagen.test" />
-      <module name="Torgrays-Datagen.lib.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ususstudios.torgrays_datagen.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Gradle.Torgrays-Datagen [publish]">
     <configuration name="Torgrays-Datagen [jar]" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -199,13 +187,11 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.test" />
       <item itemvalue="Gradle.Torgrays-Datagen [jar]" />
       <item itemvalue="Gradle.Torgrays-Datagen [publish]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.test" />
         <item itemvalue="Gradle.Torgrays-Datagen [publish]" />
       </list>
     </recent_temporary>
@@ -435,7 +421,23 @@
       <option name="project" value="LOCAL" />
       <updated>1751487732385</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="fixed floating point imprecision issue">
+      <option name="closed" value="true" />
+      <created>1751589915381</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1751589915381</updated>
+    </task>
+    <task id="LOCAL-00029" summary="fixed an issue">
+      <option name="closed" value="true" />
+      <created>1751590442401</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1751590442401</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -465,8 +467,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Gradle plugin, unpublished" />
-    <MESSAGE value="Published on JitPack and changed to a library" />
     <MESSAGE value="Almost fully changed to a library" />
     <MESSAGE value="Fully changed to a library" />
     <MESSAGE value="FULLY fully changed to a library" />
@@ -490,6 +490,8 @@
     <MESSAGE value="items" />
     <MESSAGE value="v1.0" />
     <MESSAGE value="object -&gt; item" />
-    <option name="LAST_COMMIT_MESSAGE" value="object -&gt; item" />
+    <MESSAGE value="fixed floating point imprecision issue" />
+    <MESSAGE value="fixed an issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed an issue" />
   </component>
 </project>
